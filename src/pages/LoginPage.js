@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import "./styles/LoginPage.css"; // Archivo de estilos CSS
+import "./styles/LoginPage.css";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
@@ -15,8 +15,8 @@ const LoginPage = () => {
     } else {
       setAttempts(attempts + 1);
       setErrorMessage("Usuario o contraseña incorrectos.");
-      setUsername(""); // Limpiar campo de usuario
-      setPassword(""); // Limpiar campo de contraseña
+      setUsername("");
+      setPassword("");
       if (attempts >= 2) {
         setErrorMessage("Has excedido el límite de intentos.");
         console.log("contraseña incorrecta");

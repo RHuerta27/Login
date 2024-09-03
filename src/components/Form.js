@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles/FormStyles.css"; // Archivo de estilos CSS
+import "./styles/FormStyles.css";
 
 const Formulario = () => {
     const [userId, setUserId] = useState("");
@@ -7,7 +7,6 @@ const Formulario = () => {
     const [errorMessage, setErrorMessage] = useState("");
   
     const handleFetchUser = () => {
-      // Simulación de API
       const fakeUserDatabase = {
         "1": { nombre: "Juan", apellidoPaterno: "Pérez", apellidoMaterno: "López" },
         "2": { nombre: "María", apellidoPaterno: "González", apellidoMaterno: "Hernández" },
@@ -21,7 +20,7 @@ const Formulario = () => {
       } else {
         setUserInfo(null);
         setErrorMessage("El ID de usuario no existe.");
-        setUserId(""); // Limpiar campo de ID
+        setUserId("");
       }
     };
   
